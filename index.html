@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Carl Johan Skölds Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/x-icon" href="websiteIcon.ico">
+
+  <script>
+    function openCity(cityName, elmnt, color) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+      }
+      document.getElementById(cityName).style.display = "flex";
+      elmnt.style.backgroundColor = color;
+
+    }
+
+    function goToLink(cityName, elmnt, color) {
+      var link = elmnt.getAttribute('link');
+      if (link) {
+        window.location.href = link;
+      }
+    }
+    function showDefault(){
+
+      openCity("Home",document.getElementById("defaultOpen"),"red")
+
+    }
+
+    window.addEventListener("DOMContentLoaded", showDefault, false);
+  </script>
+
+</head>
+
+<body>
+
+  <div class="topnav">
+    <a href="https://twitter.com/SpoonSkld"target="_blank"><img src="twitter.png" alt="twitter" style="width:30px;height:30px;"></a>
+    <a href="https://www.linkedin.com/in/carljohanskold/"target="_blank"><img src="linkedin.png" alt="linkedin" style="width:30px;height:30px;"></a>
+    <a href="https://soundcloud.com/data_machine"target="_blank"><img src="soundcloud.png" alt="soundcloud" style="width:30px;height:30px;"></a>
+    <a href="#about"><img src="email.png" alt="mail" style="width:30px;height:30px;"></a>
+  </div>
+
+  
+  
+
+  <div id="Home" class="tabcontent">
+    <h1>CARL JOHAN SKÖLDS WEBSITE</h1>
+    <p>A site for all things me.</p>
+  </div>
+
+  <div id="threeD" class="tabcontent" link="3D.html">
+    <h1>3D ARTWORK</h1>
+    <p>My art in three dimensions.</p>
+  </div>
+
+  <div id="twoD" class="tabcontent">
+    <h1>2D ARTWORK</h1>
+    <p>My art in two dimensions.</p>
+  </div>
+
+  <div id="Games" class="tabcontent">
+    <h1>INTERACTIVE ENTERTAINMENT</h1>
+    <p>MAI VIEDOGAEMS!!!</p>
+  </div>
+
+  <div id="Music" class="tabcontent">
+    <h1>BANGERS</h1>
+    <p>I'm getting out of the hood with these ones.</p>
+  </div>
+
+  <div onmouseleave="showDefault()" id="buttonContainer">
+  <a class="tablink" onmousemove="openCity('Home', this, 'red')" id="defaultOpen">HOME</a>
+  <a class="tablink" onmousemove="openCity('threeD', this, 'green')" href="3D.html">3D</a>
+  <a class="tablink" onmousemove="openCity('twoD', this, 'blue')">2D</a>
+  <a class="tablink" onmousemove="openCity('Games', this, 'orange')">GAMES</a>
+  <a class="tablink" onmousemove="openCity('Music', this, 'violet')" href="https://soundcloud.com/data_machine"target="_blank">MUSIC</a>
+  </div>
+
+
+<div id="meSpeechContainer">
+  <div id="speechLeft"><img src="websiteMeSpeechLeft.gif" alt="websiteMe"></div>
+    <div id="speechMiddle">
+      <div id="textInBubble">Hello!<br>Welcome to my website!<br>Enjoy your stay! c:</div>
+    </div>
+  <div id="speechRight"><img src="websiteMeSpeechRight.png" alt="websiteSpeechRight"></div>
+</div>
+
+
+  <div id="mainPage" class="mainPageContent">
+    
+  </div>
+
+  <!-- <footer>
+    <p>RIP 1997-2024</p>
+  </footer> -->
+
+
+</body>
+
+</html>
