@@ -6,7 +6,10 @@
 } */
 
 
-
+@font-face {
+  src: url(Early\ GameBoy.ttf);
+  font-family: earlyGameboy;
+}
 
 body {
 
@@ -168,9 +171,9 @@ height: 240px;
   width: 100%;
   text-align: center;
   color: black;
-  font-size: min(4vw, 50px);
-  font-weight: bold;
+  font-size: min(3vw, 50px);
   overflow-wrap: anywhere;
+  font-family: earlyGameboy;
 }
 
 #speechRight {
