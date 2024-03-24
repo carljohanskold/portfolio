@@ -31,7 +31,7 @@
     }
     function showDefault(){
 
-      openCity("Home",document.getElementById("defaultOpen"),"red")
+      openCity("Games",document.getElementById("defaultOpen"),"orange")
 
     }
 
@@ -77,10 +77,10 @@
   </div>
 
   <div onmouseleave="showDefault()" id="buttonContainer">
-  <a class="tablink" onmousemove="openCity('Home', this, 'red')" id="defaultOpen">HOME</a>
+  <a class="tablink" onmousemove="openCity('Home', this, 'red')" href="index.html">HOME</a>
   <a class="tablink" onmousemove="openCity('threeD', this, 'green')" href="3D.html">3D</a>
   <a class="tablink" onmousemove="openCity('twoD', this, 'blue')">2D</a>
-  <a class="tablink" onmousemove="openCity('Games', this, 'orange')">GAMES</a>
+  <a class="tablink" onmousemove="openCity('Games', this, 'orange')"id="defaultOpen" href="games.html">GAMES</a>
   <a class="tablink" onmousemove="openCity('Music', this, 'violet')" href="https://soundcloud.com/data_machine"target="_blank">MUSIC</a>
   </div>
 
@@ -88,60 +88,21 @@
 <div id="meSpeechContainer">
   <div id="speechLeft"><img src="websiteMeSpeechLeft.gif" alt="websiteMe"></div>
     <div id="speechMiddle">
-      <div id="textInBubble">Hello!<br>Welcome to my website!<br>Down here you can <br>see some of my EPIC work!</div>
+      <div id="textInBubble">Here are some games that I've helped make!<br></div>
     </div>
   <div id="speechRight"><img src="websiteMeSpeechRight.png" alt="websiteSpeechRight"></div>
 </div>
 
 <hr/>
 
-<div id="3DSegment" class="titleText">
-
-3D!
-
-</div>
-
-<hr/>
-
-
-  <div id="mainPage" class="mainPageContent">
-
-    <img src="coverArtRenderCC.png"/>
-    <hr/>
-    <img src="/3D artwork/peach.jpg"/>
-    <hr/>
-    <img src="/3D artwork/daftpunk.png"/>
-    <hr/>
-    <video autoplay loop>
-      <source src="/3D artwork/johanSkold_soSweet.mov" type="video/mp4"/>
-    Your browser does not support the video tag.
-    </video>
-    
+<div class="wrapper">
+  <div class="h_iframe">
+      <!-- a transparent image is preferable -->
+      <img class="ratio" src="http://placehold.it/16x9"/>
+      <iframe frameborder="0" src="https://itch.io/embed-upload/8817122?color=333333" allowfullscreen="";><a href="https://zimonitrome.itch.io/spacesparse">Play SpaceSparse on itch.io</a></iframe>
   </div>
-
-  <hr/>
-
-  <div id="3DSegment" class="titleText">
-
-    2D!
-    
-    </div>
-
-    <hr/>
-
-    <div id="mainPage" class="mainPageContent">
-
-      <img src="/2D artwork/mikufinal2.png"/>
-      <hr/>
-      <img src="/2D artwork/missTreatCharacterSheet.png"/>
-      <hr/>
-
-    </div>
-  
-
-  <!-- <footer>
-    <p>RIP 1997-2024</p>
-  </footer> -->
+  <p>Please scale the "result" window to notice the effect.</p>
+</div>
 
 
 </body>
