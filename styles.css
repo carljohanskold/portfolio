@@ -42,6 +42,16 @@ body {
 
 }
 
+.topnav p {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding-top: 0.45%;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: earlyGameboy;
+
+}
 /* Change the color of links on hover */
 .topnav a:hover {
   color: black;
@@ -248,8 +258,22 @@ font-size: min(4vw, 30px);
 padding-top: 20px;
 padding-bottom: 20px;
 font-family: earlyGameboy;
+cursor: pointer;
 
 }
+
+.titleText:hover {
+
+  text-align: center;
+  color: rgba(255, 255, 255, 0.438);
+  font-size: min(4vw, 30px);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: earlyGameboy;
+  cursor: pointer;
+  
+  }
+
 
 footer {
 

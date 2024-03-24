@@ -36,6 +36,15 @@
     }
 
     window.addEventListener("DOMContentLoaded", showDefault, false);
+
+    function myFunction(Id) {
+  var x = document.getElementById(Id);
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
   </script>
 
 </head>
@@ -47,6 +56,7 @@
     <a href="https://www.linkedin.com/in/carljohanskold/"target="_blank"><img src="linkedin.png" alt="linkedin" style="width:30px;height:30px;"></a>
     <a href="https://soundcloud.com/data_machine"target="_blank"><img src="soundcloud.png" alt="soundcloud" style="width:30px;height:30px;"></a>
     <a href="#about"><img src="email.png" alt="mail" style="width:30px;height:30px;"></a>
+    <p>CONTACT ME HERE</p>
   </div>
 
   
@@ -77,35 +87,83 @@
   </div>
 
   <div onmouseleave="showDefault()" id="buttonContainer">
-  <a class="tablink" onmousemove="openCity('Home', this, 'red')">HOME</a>
+  <a class="tablink" onmousemove="openCity('Home', this, 'red')"href="index.html">HOME</a>
   <a class="tablink" onmousemove="openCity('threeD', this, 'green')" href="3D.html">3D</a>
   <a class="tablink" onmousemove="openCity('twoD', this, 'blue')">2D</a>
   <a class="tablink" onmousemove="openCity('Games', this, 'orange')" href="games.html">GAMES</a>
-  <a class="tablink" onmousemove="openCity('Music', this, 'violet')" id="defaultOpen" href="https://soundcloud.com/data_machine"target="_blank">MUSIC</a>
+  <a class="tablink" onmousemove="openCity('Music', this, 'violet')" id="defaultOpen" href="music.html">MUSIC</a>
   </div>
 
 
 <div id="meSpeechContainer">
   <div id="speechLeft"><img src="websiteMeSpeechLeft.gif" alt="websiteMe"></div>
     <div id="speechMiddle">
-      <div id="textInBubble">Here is some of my music!<br>A little bit of videogame inspired stuff and some EDM. </div>
+      <div id="textInBubble"><p>Here is some of my music!<br>A little bit of videogame inspired stuff and some EDM.<br>More can be found on my <a href="https://soundcloud.com/data_machine"target="_blank">soundcloud</a>.</p> </div>
     </div>
   <div id="speechRight"><img src="websiteMeSpeechRight.png" alt="websiteSpeechRight"></div>
 </div>
 
 <hr/>
 
-<div class="titleText">
+<div class="titleText"onclick="myFunction('videogameMusic')">
 
   Videogame music!
   
   </div>
 
   <hr/>
+  <div id="videogameMusic" style="display: none;" class="musicList">
 
   <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1647969333&color=%23ff0000&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/data_machine" title="Spewn" target="_blank" style="color: #cccccc; text-decoration: none;">Spewn</a> · <a href="https://soundcloud.com/data_machine/spacesparce-level-music" title="Spacesparce level music" target="_blank" style="color: #cccccc; text-decoration: none;">Spacesparce level music</a></div>
 
   <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1517387338&color=%23ff0000&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/data_machine" title="Spewn" target="_blank" style="color: #cccccc; text-decoration: none;">Spewn</a> · <a href="https://soundcloud.com/data_machine/timespaceracers" title="Time&amp;spaceRacers" target="_blank" style="color: #cccccc; text-decoration: none;">Time&amp;spaceRacers</a></div>
+
+  <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1251524035&color=%23ff0000&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/data_machine" title="Spewn" target="_blank" style="color: #cccccc; text-decoration: none;">Spewn</a> · <a href="https://soundcloud.com/data_machine/marble-meadows-64" title="Marble Meadows 64" target="_blank" style="color: #cccccc; text-decoration: none;">Marble Meadows 64</a></div>
+  
+  <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1477083415&color=%23ff0000&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/data_machine" title="Spewn" target="_blank" style="color: #cccccc; text-decoration: none;">Spewn</a> · <a href="https://soundcloud.com/data_machine/maroon-dunes-two" title="Maroon Dunes 2" target="_blank" style="color: #cccccc; text-decoration: none;">Maroon Dunes 2</a></div>
+  
+  <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1115245600&color=%23ff0000&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/data_machine" title="Spewn" target="_blank" style="color: #cccccc; text-decoration: none;">Spewn</a> · <a href="https://soundcloud.com/data_machine/earthboundforest2" title="EarthboundForest2" target="_blank" style="color: #cccccc; text-decoration: none;">EarthboundForest2</a></div>
+
+  </div>
+
+  <hr/>
+
+  <div class="titleText"onclick="myFunction('electronicMusic')">
+
+    ELECTRONIC DANCE MUSIC!
+    
+  </div>
+
+  <hr/>
+
+  <div id="electronicMusic" style="display: none;" class="musicList">
+
+  <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1523004451&color=%23ff0000&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/data_machine" title="Spewn" target="_blank" style="color: #cccccc; text-decoration: none;">Spewn</a> · <a href="https://soundcloud.com/data_machine/mass-dehumanization" title="mass dehumanization" target="_blank" style="color: #cccccc; text-decoration: none;">mass dehumanization</a></div>
+
+  <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1294194745&color=%23ff0000&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/data_machine" title="Spewn" target="_blank" style="color: #cccccc; text-decoration: none;">Spewn</a> · <a href="https://soundcloud.com/data_machine/redeye" title="Jester - Redeye" target="_blank" style="color: #cccccc; text-decoration: none;">Jester - Redeye</a></div>
+
+  <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1431889687&color=%23ff0000&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/data_machine" title="Spewn" target="_blank" style="color: #cccccc; text-decoration: none;">Spewn</a> · <a href="https://soundcloud.com/data_machine/adventure" title="ADVENTURE" target="_blank" style="color: #cccccc; text-decoration: none;">ADVENTURE</a></div>
+
+  <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1425932704&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/data_machine" title="Spewn" target="_blank" style="color: #cccccc; text-decoration: none;">Spewn</a> · <a href="https://soundcloud.com/data_machine/flowstate" title="FLOWSTATE" target="_blank" style="color: #cccccc; text-decoration: none;">FLOWSTATE</a></div>
+
+  <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1647970644&color=%23ff0000&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/data_machine" title="Spewn" target="_blank" style="color: #cccccc; text-decoration: none;">Spewn</a> · <a href="https://soundcloud.com/data_machine/gardenofcreatev2-wav" title="gardenOfCreatev2.wav" target="_blank" style="color: #cccccc; text-decoration: none;">gardenOfCreatev2.wav</a></div>
+
+  <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1235959186&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/data_machine" title="Spewn" target="_blank" style="color: #cccccc; text-decoration: none;">Spewn</a> · <a href="https://soundcloud.com/data_machine/anotherday" title="Another Day" target="_blank" style="color: #cccccc; text-decoration: none;">Another Day</a></div>
+
+  </div>
+
+  <hr/>
+
+  <div class="titleText"onclick="myFunction('whateverMusic')">
+
+    WHATEVER MUSIC!
+    
+  </div>
+
+  <hr/>
+
+
+
 </body>
 
 </html>
