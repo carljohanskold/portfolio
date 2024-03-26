@@ -3,8 +3,9 @@
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Page Title</title>
+  <title>Carl Johan Skölds Portfolio</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/x-icon" href="websiteIcon.ico">
 
   <script>
     function openCity(cityName, elmnt, color) {
@@ -41,49 +42,88 @@
 
 <body>
 
+  <div class="topnav">
+    <a href="https://twitter.com/SpoonSkld"target="_blank"><img src="twitter.png" alt="twitter" style="width:30px;height:30px;"></a>
+    <a href="https://www.linkedin.com/in/carljohanskold/"target="_blank"><img src="linkedin.png" alt="linkedin" style="width:30px;height:30px;"></a>
+    <a href="https://soundcloud.com/data_machine"target="_blank"><img src="soundcloud.png" alt="soundcloud" style="width:30px;height:30px;"></a>
+    <a href="#about"><img src="email.png" alt="mail" style="width:30px;height:30px;" href="mailto:skoldjohan11@gmail.com"></a>
+  </div>
+
+  
+  
+
   <div id="Home" class="tabcontent">
-    <h1>CARL JOHAN SKÖLDS PORTFOLIO</h1>
-    <p>INSERT EPIC CONTENT HERE.</p>
+    <p class="tabText u-non-blurred"><br><br>A site for all things me.</p>
   </div>
 
-  <div id="threeD" class="tabcontent" link="3D.html">
-    <h1>3D ARTWORK</h1>
-    <p>Paris is the capital of France.</p>
+  <div id="threeD" class="tabcontent background-filter" link="3D.html">
+    <h1 class="tabText u-non-blurred">3D ARTWORK</h1>
+    <p class="tabText u-non-blurred">My art in three dimensions.</p>
   </div>
 
-  <div id="twoD" class="tabcontent">
-    <h1>2D ARTWORK</h1>
-    <p>Tokyo is the capital of Japan.</p>
+  <div id="twoD" class="tabcontent background-filter">
+    <h1 class="tabText u-non-blurred">2D ARTWORK</h1>
+    <p class="tabText u-non-blurred">My art in two dimensions.</p>
   </div>
 
-  <div id="Games" class="tabcontent">
-    <h1>INTERACTIVE ENTERTAINMENT</h1>
-    <p>Oslo is the capital of Norway.</p>
+  <div id="Games" class="tabcontent background-filter">
+    <h1 class="tabText u-non-blurred">INTERACTIVE ENTERTAINMENT</h1>
+    <p class="tabText u-non-blurred">MAI VIEDOGAEMS!!!</p>
   </div>
 
-  <div id="Music" class="tabcontent">
-    <h1>BANGERS</h1>
-    <p>Oslo is the capital of Norway.</p>
+  <div id="Music" class="tabcontent background-filter">
+    <h1 class="tabText u-non-blurred">BANGERS</h1>
+    <p class="tabText u-non-blurred">I'm getting out of the hood with these ones.</p>
   </div>
 
   <div onmouseleave="showDefault()" id="buttonContainer">
   <a class="tablink" onmousemove="openCity('Home', this, 'red')" href="index.html">HOME</a>
   <a class="tablink" onmousemove="openCity('threeD', this, 'green')" href="3D.html" id="defaultOpen">3D</a>
   <a class="tablink" onmousemove="openCity('twoD', this, 'blue')">2D</a>
-  <a class="tablink" onmousemove="openCity('Games', this, 'orange')">GAMES</a>
-  <a class="tablink" onmousemove="openCity('Music', this, 'violet')" href="https://soundcloud.com/data_machine"target="_blank">MUSIC</a>
+  <a class="tablink" onmousemove="openCity('Games', this, 'orange')" href="games.html">GAMES</a>
+  <a class="tablink" onmousemove="openCity('Music', this, 'violet')" href="music.html">MUSIC</a>
   </div>
 
 
+<div id="meSpeechContainer">
+  <div id="speechLeft"><img src="3DportraitLeft.gif" alt="websiteMe"></div>
+    <div id="speechMiddle">
+      <div id="textInBubble">Here is my 3d artwork!<br>yap yap yap yap yap yap yap yap yap yap yap</div>
+    </div>
+  <div id="speechRight"><img src="websiteMeSpeechRight.png" alt="websiteSpeechRight"></div>
+</div>
+
+<hr/>
+
+<div id="3DSegment" class="titleText">
+
+3D!
+
+</div>
+
+<hr/>
 
 
+  <div id="mainPage" class="mainPageContent">
 
-  <!-- <div id="mainPage" class="mainPageContent">
-    <h1>here is where all the highlighted content goes and maybe some information about myself and stuff.</h1>
+    <img src="coverArtRenderCC.png"/>
+    <hr/>
+    <img src="/3D artwork/peach.jpg"/>
+    <hr/>
+    <img src="/3D artwork/daftpunk.png"/>
+    <hr/>
+    <video autoplay loop>
+      <source src="/3D artwork/johanSkold_soSweet.mov" type="video/mp4"/>
+    Your browser does not support the video tag.
+    </video>
+    
   </div>
 
-  <footer>
-    <p>Footer</p>
+  <hr/>
+
+
+  <!-- <footer>
+    <p>RIP 1997-2024</p>
   </footer> -->
 
 
